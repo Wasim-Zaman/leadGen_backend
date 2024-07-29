@@ -55,6 +55,9 @@ const sendEmail = (mailOptions, res) => {
 };
 
 // Endpoint for estimation requests
+app.get("/wasim", (req, res, next) => {
+  res.send("hello");
+});
 app.post("/sendEmail", (req, res) => {
   const { name, phoneNumber, projectDescription, city, whatsappNumber } =
     req.body;
